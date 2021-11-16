@@ -339,6 +339,16 @@ building, e.g. ~MIRYOKU_ALPHAS=QWERTY~.
 | Y    | X    | C    | V    | B    | N    | M    | ,    | DOT  | /    |
 
 
+****** QGMLWB
+
+~MIRYOKU_ALPHAS=QGMLWB~
+
+#+NAME: qgmlwb
+| Q | G | M | L | W | B | Y | U | V   | ' |
+| D | S | T | N | R | I | A | E | O   | H |
+| Z | X | C | F | J | K | P | , | DOT | / |
+
+
 ***** Nav
 
 
@@ -1025,6 +1035,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 <<table-layout-taphold(alphas_table=qwerty, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
   #elif defined MIRYOKU_ALPHAS_QWERTZ
 <<table-layout-taphold(alphas_table=qwertz, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
+  #elif defined MIRYOKU_ALPHAS_QGMLWB
+<<table-layout-taphold(alphas_table=qgmlwb, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
   #else
 <<table-layout-taphold(alphas_table=colemakdh, thumbs_table=thumbs-flip, hold_table=hold-flip)>>
   #endif
@@ -1077,6 +1089,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 <<table-layout-taphold(alphas_table=qwerty)>>
   #elif defined MIRYOKU_ALPHAS_QWERTZ
 <<table-layout-taphold(alphas_table=qwertz)>>
+  #elif defined MIRYOKU_ALPHAS_QGMLWB
+<<table-layout-taphold(alphas_table=qgmlwb)>>
   #else
 <<table-layout-taphold(alphas_table=colemakdh)>>
   #endif
